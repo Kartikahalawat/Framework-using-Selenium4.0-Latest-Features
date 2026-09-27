@@ -21,6 +21,8 @@ public class PartialScreenshot {
         File file = element.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(file, new File("F://Study//Working Professional//SDET Journey//Selenium Web Driver Course Rahul Shetty Udemy//Codes//Selenium4.0//logo.png"));
 
+        System.out.println(element.getRect().getDimension().getHeight());
+        System.out.println(element.getRect().getDimension().getWidth());
         driver.quit();
     }
 }
